@@ -14,17 +14,17 @@ public class Ejercicio2 extends Operaciones{
     int res;
 
     public void Ejercicio2metodo(){
-        System.out.println("Introducir un número entero:");
+        System.out.println("Introduce un número entero, porfavor:");
         try {
             while(num1 == 0){
                 num1 = sc.nextInt();
             }
         } catch (InputMismatchException e) {
-            System.out.println("Debe ser un entero entre -2.147.483.648 y 2.147.483.647");
+            System.out.println("Error numero demasiado grande, debe ser un entero entre -2.147.483.648 y 2.147.483.647");
         }
 
         sc.nextLine();
-        System.out.println("Introducir un operador, (+ - * / %) o s para salir: ");
+        System.out.println("Introduce un operador, (+ - * / %) o s para salir: ");
         opcion = sc.nextLine();
         switch (opcion) {
             case "+":
@@ -32,7 +32,7 @@ public class Ejercicio2 extends Operaciones{
                     System.out.println("Introducir un número entero:");
                     num2 = sc.nextInt();
                 } catch (InputMismatchException e) {
-                    System.out.println("Debe ser un entero entre -2.147.483.648 y 2.147.483.647");
+                    System.out.println("Error numero demasiado grande, debe ser un entero entre -2.147.483.648 y 2.147.483.647");
                     break;
                 }
                 sc.nextLine();
@@ -48,7 +48,7 @@ public class Ejercicio2 extends Operaciones{
                 try {
                     num2 = sc.nextInt();
                 } catch (InputMismatchException e) {
-                    System.out.println("Debe ser un entero entre -2.147.483.648 y 2.147.483.647");
+                    System.out.println("Error numero demasiado grande, debe ser un entero entre -2.147.483.648 y 2.147.483.647");
                 }
                 sc.nextLine();
                 try {
@@ -63,7 +63,7 @@ public class Ejercicio2 extends Operaciones{
                 try {
                     num2 = sc.nextInt();
                 } catch (InputMismatchException e) {
-                    System.out.println("Debe ser un entero entre -2.147.483.648 y 2.147.483.647");
+                    System.out.println("Error numero demasiado grande, debe ser un entero entre -2.147.483.648 y 2.147.483.647");
                 }
                 sc.nextLine();
                 try {
@@ -78,7 +78,7 @@ public class Ejercicio2 extends Operaciones{
                 try {
                     num2 = sc.nextInt();
                 } catch (InputMismatchException e) {
-                    System.out.println("Debe ser un entero entre -2.147.483.648 y 2.147.483.647");
+                    System.out.println("Error numero demasiado grande, debe ser un entero entre -2.147.483.648 y 2.147.483.647");
                 }
                 sc.nextLine();
                 res = num1 / num2;
